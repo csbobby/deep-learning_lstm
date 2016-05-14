@@ -14,6 +14,7 @@ sys.path.append('../')
 from ws_py import datapreparation as dp
 from IterationGraph import *
 
+
 if __name__ == "__main__":
 	print 'start'
 	did = 0

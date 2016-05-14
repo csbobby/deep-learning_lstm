@@ -11,6 +11,7 @@ from keras.layers.core import Dense, Activation, Dropout
 import pandas as pd
 import numpy as np
 
+
 def predicting(model,X_test,resultsfname):
 	print("Generating test predictions...")
 	preds = model.predict_classes(X_test, verbose=0)

@@ -11,6 +11,7 @@ from keras.layers.core import Dense, Activation, Dropout
 import pandas as pd
 import numpy as np
 
+
 def lstm_training(X_train,y_train,input_dim,nb_classes):
 	#settings
 	param={}

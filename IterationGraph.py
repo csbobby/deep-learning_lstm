@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+
 def IterationGraph(loss,val_loss,history_path,graph_out_path,features):
 	history_f = open(history_path,'w')
 	length_history = len(loss)

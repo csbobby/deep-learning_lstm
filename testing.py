@@ -14,7 +14,6 @@ import scipy as sp
 
 def testing(X_test,y_test,resultsfname,evaluationfname):
 	print("Evaluate the results...")
-
 	preds = model.predict_classes(X_test, verbose=0)
 	def write_preds(preds, fname):
 		pd.DataFrame({"SampleID": list(range(1,len(preds)+1)), "Label": preds}).to_csv(fname, index=False, header=True)

@@ -24,7 +24,7 @@ def lstm_training(X_train,y_train,input_dim,nb_classes):
 	model = Sequential()
 	model.add(LSTM(input_dim = 3561, output_dim = 3000,return_sequences = False))
 	model.add(Dense(input_dim = 3000, output_dim = 1))
-	model.add(Activation("linear"))
+	model.add(Activation("softmax"))
 	
 	# we'll use MSE (mean squared error) for the loss, and RMSprop as the optimizer
 	model.compile(loss='mse', optimizer='rmsprop')
